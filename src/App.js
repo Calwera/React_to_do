@@ -1,13 +1,23 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import "./App.css";
-import ToDoForm from "./components/ToDoForm.js";
+import ObjectCreated from "./components/ObjectCreated";
+import RenderUser from "./components/User/RenderUser";
+
+const DATA = [];
 
 class App extends Component {
   render() {
+    const [user, setUser] = useState(DATA);
+
+    const addUserHandler = (user) => {
+      setUser((prevUser) => {
+        return [user, ...prevUser];
+      });
+    };
     return (
       <div className="App">
-        <h1> Hello, World! </h1>
-        <ToDoForm></ToDoForm>
+        <ObjectCreated onAddUser={addUserHandler} />
+        <RenderUser users={user} />
       </div>
     );
   }

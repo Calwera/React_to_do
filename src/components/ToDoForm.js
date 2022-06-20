@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./ToDoForm.css";
-const ToDoForm = () => {
-  const submitHandler = () => {
-    return;
-  }
-  const enteredName = '';
-  const enteredAge = '';
-  const nameChangeHandler= 'Jasio';
-  const ageChangeHandler = () => {
-    return;
-  }
+const ToDoForm = (props) => {
+  const [enteredName, setEnteredName] = useState("");
+  const [enteredAge, setEnteredAge] = useState("");
+
+  const nameChangeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const ageChangeHandler = (event) => {
+    setEnteredAge(event.target.value);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const userData = {
+      username: enteredName,
+      userage: enteredAge,
+    };
+
+    props.onSaveUserData(userData);
+    setEnteredAge("");
+    setEnteredName("");
+  };
 
   return (
     <form onSubmit={submitHandler}>
