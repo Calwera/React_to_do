@@ -2,6 +2,16 @@ import React from "react";
 
 import "./ToDoForm.css";
 const ToDoForm = () => {
+  const submitHandler = () => {
+    return;
+  }
+  const enteredName = '';
+  const enteredAge = '';
+  const nameChangeHandler= 'Jasio';
+  const ageChangeHandler = () => {
+    return;
+  }
+
   return (
     <form onSubmit={submitHandler}>
       <div className="to-doform__fields">

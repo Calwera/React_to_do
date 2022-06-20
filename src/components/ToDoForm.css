@@ -1,0 +1,39 @@
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    margin:  0 auto ;
+    width: 30rem;
+    padding: 0.5rem 1rem;
+    font: 1em sans-serif;
+    font-weight: 700;
+}
+
+
+.to-doform__fields {
+
+
+}
+
+.to-doform__field {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.to-doform__field:first-child {
+    margin-top: 0;
+}
+
+.to-doform__field, label {
+    margin: 0.5rem 0;
+}
+
+ button {
+    background-color: #3b0054;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.4rem 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
