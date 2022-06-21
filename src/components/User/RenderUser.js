@@ -5,8 +5,13 @@ import "./RenderUser.css";
 const RenderUser = (props) => {
   return (
     <div className="render-users">
-      <h2 className="user-name">{props.username}</h2>
-      <h2 className="user-age">{props.userage}</h2>
+      {props.users.map((user) => (
+        <div className="render-user">
+          <div>
+            {user.username} ({user.userage} years old)
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
