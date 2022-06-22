@@ -13,10 +13,15 @@ function App() {
       return [user, ...prevUser];
     });
   };
+
+  const deleteUserHandler = (user) => {
+    setUser();
+  };
+
   return (
     <div className="App">
       <UserNew onAddUser={addUserHandler} />
-      <RenderUser users={user} />
+      <RenderUser users={user} onDeleteUsers={deleteUserHandler} />
     </div>
   );
 }
