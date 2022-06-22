@@ -1,9 +1,9 @@
 import React from "react";
 
-import ToDoForm from "./ToDoForm";
-import "./ObjectCreated.css";
+import UserForm from "./UserForm";
+import "./UserNew.css";
 
-const ObjectCreated = (props) => {
+const UserNew = (props) => {
   const saveUserDataHandler = (enteredUser) => {
     const userData = {
       ...enteredUser,
@@ -11,7 +11,7 @@ const ObjectCreated = (props) => {
     };
     props.onAddUser(userData);
   };
-  return <ToDoForm onSaveUserData={saveUserDataHandler} />;
+  return <UserForm onSaveUserData={saveUserDataHandler} />;
 };
 
-export default ObjectCreated;
+export default UserNew;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import "./ToDoForm.css";
-const ToDoForm = (props) => {
+import "./UserForm.css";
+const UserForm = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
 
@@ -50,4 +50,4 @@ const ToDoForm = (props) => {
   );
 };
 
-export default ToDoForm;
+export default UserForm;

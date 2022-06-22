@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import "./App.css";
-import ObjectCreated from "./components/ObjectCreated";
+import UserNew from "./components/UserNew";
 import RenderUser from "./components/User/RenderUser";
 
 const DATA = [];
@@ -15,7 +15,7 @@ function App() {
   };
   return (
     <div className="App">
-      <ObjectCreated onAddUser={addUserHandler} />
+      <UserNew onAddUser={addUserHandler} />
       <RenderUser users={user} />
     </div>
   );

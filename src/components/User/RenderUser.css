@@ -2,11 +2,22 @@
   width: 32rem;
   margin: 1rem auto;
 }
+
 .render-user {
+  display: flex;
+  align-items: center;
   margin: 1rem auto;
   border-radius: 10px;
   background-color: #fff;
   color: black;
   height: 2.5rem;
   padding: 0.5rem 1rem;
+}
+.render-text {
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.3rem;
 }
