@@ -5,9 +5,9 @@ import "./Modal.css";
 const Modal = (props) => {
   return (
     <div className="Modal-overlay">
-      <h1 className="Modal-header">Invalid Input</h1>
+      <h1 className="Modal-header">Invalid input!</h1>
       <div className="Modal-body">
-        <p className="Modal-text">Please enter a valid age ( {">"} 0)</p>
+        <p className="Modal-text">{props.error}</p>
         <button onClick={props.onButton} className="Modal-button">
           Okay
         </button>

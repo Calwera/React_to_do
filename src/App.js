@@ -22,7 +22,7 @@ function App() {
       return user;
     });
   };
-  console.log(user);
+
   return (
     <div className="App">
       <UserValidator onAddUser={addUserHandler} />
