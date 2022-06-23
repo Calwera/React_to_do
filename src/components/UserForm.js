@@ -31,7 +31,7 @@ const UserForm = (props) => {
       <div className="to-doform__fields">
         <div className="to-doform__field">
           <label>Username</label>
-          <input type="text" value={enteredName} onChange={nameChangeHandler} />
+          <input type='text' value={enteredName} onChange={nameChangeHandler} />
         </div>
         <div className="to-doform__field">
           <label>Age (Years)</label>

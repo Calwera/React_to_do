@@ -1,0 +1,27 @@
+.Modal-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 20vh;   
+    width: 50vh;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Modal-header {
+    background-color: darkviolet;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem;
+}
+
+.Modal-text {
+    margin: 2rem;
+}
+
+.Modal-button {
+    position: absolute;
+    right: 10%;
+}

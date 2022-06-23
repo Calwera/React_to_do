@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react";
 import "./App.css";
-import UserNew from "./components/UserNew";
 import RenderUser from "./components/User/RenderUser";
+import UserValidator from "./components/UserValidator";
 
 const DATA = [];
 
@@ -25,8 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      <UserNew onAddUser={addUserHandler} />
+      <UserValidator onAddUser={addUserHandler} />
       <RenderUser users={user} onDeleteUsers={deleteUserHandler} />
+
     </div>
   );
 }
