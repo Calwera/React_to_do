@@ -14,8 +14,13 @@ function App() {
     });
   };
 
-  const deleteUserHandler = (user) => {
-    setUser();
+  const deleteUserHandler = (iduser) => {
+    setUser(prevUser => {
+    const user = prevUser.filter((val) => {
+        return val.id !==  iduser
+   })
+       return user;
+       })
   };
 
   return (
