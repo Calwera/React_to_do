@@ -15,19 +15,20 @@ function App() {
   };
 
   const deleteUserHandler = (iduser) => {
-    setUser(prevUser => {
-    const user = prevUser.filter((val) => {
-        return val.id !==  iduser
-   })
-       return user;
-       })
+    setUser((prevUser) => {
+      const user = prevUser.filter((val) => {
+        return val.id !== iduser;
+      });
+      return user;
+    });
   };
-
+  console.log(user);
   return (
     <div className="App">
       <UserValidator onAddUser={addUserHandler} />
-      <RenderUser users={user} onDeleteUsers={deleteUserHandler} />
-
+      {user.length !== 0 && (
+        <RenderUser users={user} onDeleteUsers={deleteUserHandler} />
+      )}
     </div>
   );
 }
